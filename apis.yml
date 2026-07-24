@@ -1,7 +1,29 @@
 aid: beeline-bikes
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/beeline-bikes.png
 name: Beeline Bikes
-description: Beeline Bikes is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Beeline Bikes (now operating as Beeline Connect) is a B2B software platform for
+  the bicycle industry that links riders, retailers, and brands across North
+  America, with roughly 3,300 participating retailers. The platform provides
+  real-time service scheduling and 24/7 appointment booking, live market inventory
+  management, test-ride booking, local bicycle assembly coordination, warranty
+  submission and reimbursement tracking, an affiliate e-commerce sales channel with
+  revenue sharing to local dealers, and a dynamic dealer locator. It supports both
+  mobile and in-shop retail operations and serves established brands such as Aventon,
+  Priority, Lectric, and Pedego. The company was surfaced as a portfolio company of
+  500 Global and added to the API Evangelist network. No public developer API,
+  documentation, or integration surface has been found at this time.
 url: https://raw.githubusercontent.com/api-evangelist/beeline-bikes/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Bicycle
+- Retail
+- Marketplace
+- Scheduling
+- Inventory
+- Warranty
+- Logistics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/beeline-bikes-domain-security.yml
 - type: Website
   url: https://beelinebikes.com
+- type: Website
+  url: https://beelineconnect.com
+- type: Support
+  url: https://beelineconnect.com/faq
+- type: TermsOfService
+  url: https://beelineconnect.com/terms
+- type: PrivacyPolicy
+  url: https://beelineconnect.com/privacy
+- type: Login
+  url: https://beelineconnect.com/signin
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
